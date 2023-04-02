@@ -6,7 +6,7 @@ function Categories() {
         <div>
             <h1>What kind of food do you like?</h1>
             {['SEAFOOD', 'ITALIAN', 'APPETIZERS', 'SALADS', 'ALL']
-            .map(category => <Filter category={category} />)}
+            .map((category, index) => <Filter category={category} key={index}/>)}
         </div>
     )
 }

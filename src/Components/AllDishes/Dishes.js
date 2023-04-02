@@ -13,7 +13,7 @@ const Dishes = () => {
                 if (selectCategory === 'ALL') return true;
                 return selectCategory === dish.category;
             })
-            .map(item => <Dish dish={item}/>)}
+            .map((item, index) => <Dish dish={item} key={index}/>)}
         </div>
     )
 }
